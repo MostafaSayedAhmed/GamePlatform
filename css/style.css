@@ -1,0 +1,811 @@
+@keyframes startAnimation {
+  from {
+    opacity: 0%;
+    top: 0px;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes sidebarappear {
+  from {
+    right: -50px;
+    opacity: 0%;
+  }
+  to {
+    right: 0px;
+    opacity: 100%;
+  }
+}
+@keyframes footerappear {
+  from {
+    width: 100%;
+    bottom: -50px;
+  }
+  to {
+    bottom: 0px;
+    width: 87.9%;
+  }
+}
+
+@keyframes playerAnimation {
+  0% {
+    content: url(../Img/player/run01.png);
+  }
+  20% {
+    content: url(../Img/player/run02.png);
+  }
+  40% {
+    content: url(../Img/player/run03.png);
+  }
+  60% {
+    content: url(../Img/player/run04.png);
+  }
+  80% {
+    content: url(../Img/player/run05.png);
+  }
+  100% {
+    content: url(../Img/player/run06.png);
+  }
+}
+@keyframes playerJumpAnimation {
+  0% {
+    content: url(../Img/player/jump01.png);
+  }
+  20% {
+    content: url(../Img/player/jump02.png);
+  }
+  40% {
+    content: url(../Img/player/jump03.png);
+  }
+  60% {
+    content: url(../Img/player/jump04.png);
+  }
+  80% {
+    content: url(../Img/player/jump05.png);
+  }
+  100% {
+    content: url(../Img/player/jump06.png);
+  }
+}
+@keyframes tictaotoeBorderlight {
+  0% {
+    border: 5px solid rgb(255, 0, 13);
+  }
+  20% {
+    border: 5px solid rgb(255, 0, 234);
+  }
+  40% {
+    border: 5px solid rgb(102, 0, 255);
+  }
+  60% {
+    border: 5px solid rgb(0, 0, 255);
+  }
+  80% {
+    border: 5px solid rgb(0, 255, 255);
+  }
+  100% {
+    border: 5px solid darkviolet;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 2rem #ff4500;
+  }
+  100% {
+    transform: scale(1.5);
+    box-shadow: 0 0 1rem #ff4500;
+  }
+}
+
+.login {
+  position: relative;
+  top: 100px;
+  animation-name: startAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  background-image: url(../Img/login.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  justify-items: center;
+  header {
+    position: fixed;
+    top: 0px;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  #loginwindow {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 1rem;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid gray;
+    border-radius: 40px;
+    justify-items: center;
+    box-sizing: content-box;
+    align-items: center;
+    height: 50vh;
+    input[type="checkbox"] {
+      width: auto;
+    }
+    * {
+      white-space: nowrap;
+    }
+    #loginButton {
+      margin-bottom: 1rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  button {
+    border: 5px solid rgb(255, 179, 0);
+    border-radius: 100px;
+    width: 7.5vw;
+    height: 7.5vh;
+    background-color: red;
+  }
+  button:hover {
+    border: 5px solid rgb(166, 255, 0);
+    border-radius: 100px;
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+  }
+}
+
+.home {
+  h1 {
+    text-align: center;
+    -webkit-text-stroke: 0.5px blue;
+  }
+  body {
+    height: 100vh;
+    position: relative;
+  }
+
+  background-image: url(../Img/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: sidebarappear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    text-wrap: wrap;
+    width: 10%;
+    border: 0.25rem solid #000;
+    padding: 0.5rem;
+    justify-items: center;
+  }
+  nav:hover {
+    background-color: #fff;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  nav ul a {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    border: 5px solid blue;
+    background-color: aqua;
+    background-image: none;
+    text-align: center;
+  }
+  nav ul li:hover {
+    background-color: #f00;
+    color: #fff;
+  }
+  nav a {
+    margin: 0px auto;
+    text-decoration: none;
+    color: #000;
+  }
+  #describe {
+    width: 50%;
+  }
+  figure {
+    width: 256px;
+    height: 256px;
+  }
+  main {
+    width: 40%;
+    white-space: wrap;
+    color: #ffffff;
+  }
+  footer {
+    animation-name: footerappear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    width: 87.9%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    background-color: #f1f1f1; /* Optional: Add background color */
+    filter: opacity(50%);
+  }
+  footer:hover {
+    filter: opacity(100%);
+  }
+  footer p {
+    position: relative;
+    margin: auto;
+  }
+  footer > #logout {
+    position: sticky;
+    justify-items: left;
+    block-size: 1rem 1rem;
+    left: 0px;
+    margin: 0rem 2rem;
+
+    border: 2px dashed darkblue;
+    border-radius: 200%;
+    background-color: cyan;
+  }
+  #logout:hover {
+    border: 2px dashed rgb(139, 0, 0);
+    border-radius: 200%;
+    background-color: rgb(255, 255, 0);
+    cursor: pointer;
+  }
+}
+
+.TicTaoToe {
+  background-image: url(../Img/TicTaoToeBackground.png);
+  background-size: cover;
+  /* From Uiverse.io by milegelu */
+  .button {
+    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --edge-light: hsla(0, 0%, 50%, 0.8);
+    --text-light: rgba(255, 255, 255, 0.4);
+    --back-color: 240, 40%;
+
+    cursor: pointer;
+    padding: 0.7em 1em;
+    border-radius: 0.5em;
+    min-height: 2.4em;
+    min-width: 3em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-weight: bold;
+
+    background: linear-gradient(
+      140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    color: hsla(0, 0%, 90%);
+    border: 0;
+    box-shadow: inset 0.4px 1px 4px var(--edge-light);
+
+    transition: all 0.1s var(--bezier);
+  }
+
+  .button:hover {
+    --edge-light: hsla(0, 0%, 50%, 1);
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+      2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
+  }
+
+  .button:active {
+    --text-light: rgba(255, 255, 255, 1);
+
+    background: linear-gradient(
+      140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    box-shadow: inset 0.4px 1px 8px var(--edge-light),
+      0px 0px 8px hsla(var(--back-color), 50%, 0.6);
+    text-shadow: 0px 0px 20px var(--text-light);
+    color: hsla(0, 0%, 100%, 1);
+    letter-spacing: 0.1em;
+    transform: scale(1);
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px violet;
+  }
+  aside {
+    background-image: linear-gradient(90deg, cyan, pink);
+    display: flex;
+    position: fixed;
+    width: 10%;
+    height: 60%;
+    right: 10%;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: 3px solid #000;
+  }
+  table {
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, violet, #00f);
+    /* border: 5px solid rgba(100, 90, 195, 0.9); */
+    animation-name: tictaotoeBorderlight;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+  }
+  table td {
+    border: 1rem solid #000;
+    width: 10rem;
+    height: 10rem;
+    font-size: 24px;
+    text-align: center;
+  }
+  table td:hover {
+    background-color: #f00;
+    color: #fff;
+  }
+  footer {
+    a:visited {
+      color: red;
+    }
+    a:hover {
+      color: wheat;
+    }
+    color: wheat;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 255, 0.5),
+      rgba(238, 130, 238, 0.215)
+    );
+    box-sizing: content-box;
+    width: fit-content;
+  }
+}
+.Guess {
+  background-image: url(../Img/guessBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  color: darkblue;
+  header > p {
+    color: black;
+    font-weight: bolder;
+  }
+
+  * {
+    text-align: center;
+  }
+  hr {
+    border: 1px dashed white;
+  }
+  table {
+    border: 5px solid rgba(95, 58, 38, 255);
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    line-height: 2rem;
+  }
+
+  table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  td button {
+    border: 0.25rem solid #000;
+    width: 3rem;
+    height: 3rem;
+    font-size: 24px;
+    text-align: center;
+  }
+  td button:hover {
+    background-color: #f00;
+    color: #fff;
+  }
+  table td[colspan="3"] {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #000;
+    border-radius: 10%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-image: radial-gradient(darkblue, blue);
+  }
+  #easy {
+    background-color: rgba(174, 246, 107, 255);
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px white;
+  }
+  #medium {
+    background-color: rgba(138, 128, 139, 255);
+    color: #000;
+    text-shadow: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px white;
+  }
+  #hard {
+    background-color: rgba(94, 59, 37, 255);
+    color: #000;
+    text-shadow: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px white;
+  }
+  h2 {
+    margin: 1rem auto;
+  }
+
+  /* Guessing Game Buttons */
+  #keypad button {
+    background: linear-gradient(45deg, #2efd00, #feb47b);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #difficulty button:hover,
+  #keypad button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #difficulty button:active,
+  #keypad button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Transitions for Difficulty Selection */
+  #difficulty {
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  #difficulty.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  #attempts {
+    opacity: 0;
+    margin-bottom: 56px;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  #attempts.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #keypad {
+    background: linear-gradient(
+      135deg,
+      rgba(95, 96, 88, 255),
+      rgba(122, 108, 144, 255)
+    );
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+}
+
+.Snake {
+  background-image: url(../Img/snakeBackground.jpg);
+  background-size: cover;
+
+  /* Style the track of the slider */
+  .slider {
+    -webkit-appearance: none; /* Removes default styling for webkit browsers */
+    background: wheat;
+    outline: none;
+    border-radius: 5px;
+    opacity: 0.8;
+  }
+
+  /* Style the thumb (the draggable circle) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default styling for webkit browsers */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+  }
+  /* From Uiverse.io by adamgiebl */
+  button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    width: 12vw;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: wheat;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+  }
+
+  button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid wheat;
+  }
+
+  button span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+
+  button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: wheat;
+  }
+
+  button:hover {
+    color: white;
+  }
+
+  button:active span::before {
+    background: wheat;
+  }
+
+  * {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(45deg, #1b1b1b, #333);
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  header,
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    color: wheat;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+  #options {
+    margin-left: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    color: wheat;
+  }
+  #gameScreen {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    margin: 1rem;
+    width: 38rem;
+    height: 38rem;
+    gap: 1px;
+    background-color: #f0f0f0;
+  }
+  #gameScreen div.cell {
+    width: 100%;
+    height: 100%;
+    background-color: #8fbc8f;
+  }
+  #gameScreen div.player {
+    width: 100%;
+    height: 100%;
+    background-color: #ff6347;
+  }
+  #gameScreen div.apple {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/apple.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: #ff4500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 8px #ff4500;
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+  }
+}
+.Dino {
+  background-image: url(../Img/westbackground.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  #cloudcontainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .clouds {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(../Img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  header {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px darkorange;
+  }
+
+  img {
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    animation-name: playerAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    width: auto;
+    height: 80px;
+    z-index: 1;
+  }
+  main {
+    width: 100%;
+  }
+  #gameScreen {
+    --Screenwidth: calc(120% / 4);
+    --Screenheight: calc(50vh / 4);
+    width: 80%;
+    max-width: 700px;
+    height: 50vh;
+    min-height: 50vh;
+    display: inline-block;
+    position: relative;
+    border: 5px solid black;
+    margin: auto;
+    min-height: 300px;
+    background-image: url(../Img/dinobackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  #scoreDisplay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px black;
+  }
+  #startButton {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: wheat;
+    color: green;
+    font-size: 24px;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #startButton:hover {
+    background-color: green;
+    color: white;
+  }
+  .gameover {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    color: red;
+    text-align: center;
+    animation-name: none;
+    top: var(--Screenheight);
+    left: var(--Screenwidth);
+  }
+
+  .box {
+    width: 40px;
+    height: 60px;
+    size: 10px 10px;
+    background-image: url(../Img/obstacleDino.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 600px;
+    top: 300px;
+  }
+}

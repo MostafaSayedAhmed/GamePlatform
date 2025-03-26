@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body data-page="Snake" class="Snake">
+    <link rel="stylesheet" href="css/style.css" />
+    <header>
+      <h1>Snake Game</h1>
+    </header>
+    <main>
+      <div id="gameScreen"></div>
+      <div id="options">
+        <h2>
+          Score :
+          <div id="score">0</div>
+        </h2>
+        <h2>
+          Speed :
+          <div id="delay">1 %</div>
+        </h2>
+        <label class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="1"
+            class="slider"
+            id="myRange"
+          />
+        </label>
+        <button id="start">Start Game<span></span></button>
+        <button id="reset">Reset Game<span></span></button>
+      </div>
+    </main>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

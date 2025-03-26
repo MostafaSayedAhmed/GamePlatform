@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="login" data-page="login">
+    <header>
+      <h1>Game Platform</h1>
+    </header>
+    <main>
+      <form action="" method="get" id="loginwindow">
+        <h2>Welcome to Game Platform</h2>
+        <label for="username">Username </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="name1234"
+        />
+        <label for="password">Password </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="*******"
+        />
+        <div id="stayin">
+          <input type="checkbox" name="stayin" id="stayincheckbox" />
+          <label for="stayin">Stay Logged In </label>
+        </div>
+        <div id="buttons">
+          <button type="button" onclick="SubmitEvent" id="regButton">
+            Register
+          </button>
+          <button type="button" onclick="SubmitEvent" id="logiButton">
+            Log In
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script src="javascript/main.js"></script>
+</html>

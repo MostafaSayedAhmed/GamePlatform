@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="Guess" class="Guess">
+    <header>
+      <h1>Welcome to Guessing Number Game</h1>
+      <p>
+        Guess a number between 1 and 100. You have a limited number of attempts
+        based on the difficulty level you choose. Good luck!
+      </p>
+    </header>
+    <main>
+      <article id="difficulty">
+        <h2>Difficulty Level</h2>
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+      </article>
+      <article id="attempts" style="display: none">
+        <h2>Attempts Remaining: <span id="attemptslife">0</span></h2>
+      </article>
+      <hr />
+      <article id="displayGuess">
+        <h2>Your Guess</h2>
+      </article>
+      <table id="keypad">
+        <tr >
+          <td colspan="3"><p id="guess">0</p></td>
+        </tr>
+        <tr>
+          <td><button id="1">1</button></td>
+          <td><button id="2">2</button></td>
+          <td><button id="3">3</button></td>
+        </tr>
+        <tr>
+          <td><button id="4">4</button></td>
+          <td><button id="5">5</button></td>
+          <td><button id="6">6</button></td>
+        </tr>
+        <tr>
+          <td><button id="7">7</button></td>
+          <td><button id="8">8</button></td>
+          <td><button id="9">9</button></td>
+        </tr>
+        <tr>
+          <td><button id="0">0</button></td>
+          <td><button id="clear">C</button></td>
+          <td><button id="submit">=</button></td>
+        </tr>
+      </table>
+    </main>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

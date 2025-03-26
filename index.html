@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body data-page="home" class="home">
+    <header>
+      <h1>Gaming Platform</h1>
+    </header>
+    <nav>
+      <h2>Choose the game you want to play</h2>
+      <ul>
+        <a href="TicTaoToe.html"><li class="TicTaoToe">Tic-Tao-Toe</li></a>
+        <a href="Snake.html"><li class="Snake">Snake Game</li></a>
+        <a href="JumpDino.html"><li class="Dino"> Jumping West</li></a>
+        <a href="Guess.html"><li class="Guess"> Guessing Game</li></a>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h2>About Platform</h2>
+        <p>This is a gaming platform where you can play different games</p>
+      </article>
+      <article class="game-description">
+        <p>Choose the game you want to play from the navigation bar</p>
+        <figure id = "describeFig" ">
+          <img
+            style="height: inherit; width: inherit"
+            id="describeImg"
+            src="./Img/game.png"
+            alt="Game Image"
+          />
+        </figure>
+        <h2>Game Description</h2>
+        <p id="describe">
+            Hover over a game to learn more about it
+        </p>
+      </article>
+    </main>
+    <footer>
+      <button type="button" id="logout" onclick="logout();">
+        Log out 
+      </button>
+      <p>
+        &copy; Game Platform author:
+        <a
+          href="https://www.linkedin.com/in/mostafa-sayed-ahmed-taha-75b1121b5/"
+          >Mostafa Sayed</a
+        >
+      </p>
+    </footer>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
