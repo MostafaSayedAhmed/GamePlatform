@@ -18,8 +18,8 @@ Welcome to the **Gaming Platform**, a collection of fun and interactive games de
   - Click on an empty cell to place your mark.
   - The first player to align three marks wins the round.
 - **Future Feature**
-  - Introduce new game mode where each player is allowed to place only 3 marks such that oldest one is removed if fourth place is selected
-  - Introduce new game mode where each cell consist of small nine cell and you need to win in the small cell in order to mark the big one making the game more challenging
+  - Introduce new game mode where each player is allowed to place only 3 marks such that oldest one is removed if fourth place is selected.
+  - Introduce new game mode where each cell consist of small nine cell and you need to win in the small cell in order to mark the big one making the game more challenging.
 
 ---
 
@@ -35,8 +35,9 @@ Welcome to the **Gaming Platform**, a collection of fun and interactive games de
   - Use the "W", "A", "S", and "D" keys to control the snake's movement.
   - Eat apples to grow longer and increase your score.
 - **Future Feature**
-  - Introduce power ups
-  - increase diffculty of the game by speeding up the snake as game progress
+  - Introduce power-ups (e.g., speed boost, double points).
+  - increase diffculty of the game by speeding up the snake as game progress.
+  - Add obstacles to increase difficulty.
 
 ---
 
@@ -52,8 +53,9 @@ Welcome to the **Gaming Platform**, a collection of fun and interactive games de
   - Press the "W" key to make the character jump.
   - Avoid colliding with obstacles to keep the game going.
 - **Future Feature**
-  - Introduce power ups
-  - fix bugs and visuals
+  - Introduce power ups.
+  - Include multiple levels with increasing difficulty.
+  - Add collectible items (e.g., coins) to make the game more engaging.
 
 ---
 
@@ -69,8 +71,9 @@ Welcome to the **Gaming Platform**, a collection of fun and interactive games de
   - Use the on-screen keypad to input your guesses.
   - Try to guess the correct number within the allowed attempts.
 - **Future Feature**
-  - Introduce hang man mode
-  - more dynamic environment
+  - Introduce hang man mode.
+  - More dynamic environment.
+  - Add a timer to increase the challenge.
 
 
 ---
